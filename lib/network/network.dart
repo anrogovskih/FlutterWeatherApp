@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import '../api_keys.dart';
 import 'dto/forecast_response_entity.dart';
 import 'dto/geocoding_result_entity.dart';
 import 'dto/weather_entity.dart';
 
 class NetworkRepository {
-  static const String apiKey = "a9d83b2157c49f5b2e18dbd053600cff";
   static const String baseUrl = "http://api.openweathermap.org/";
   static const String dataUrl = "${baseUrl}data/2.5/";
   static const String geocodingUrl = "${baseUrl}geo/1.0/direct?appid=$apiKey&limit=3";
